@@ -27,7 +27,7 @@ df['Year'] = pd.to_datetime(df['Date']).dt.year
 app.layout = html.Div(children=[html.H1('Australia Wildfire Dashboard', 
                                 style={'textAlign': 'center', 'color': '#503D36',
                                 'font-size': 26}),
-                                
+
 # TASK 2: Add the radio items and a dropdown right below the first inner division
      #outer division starts
      html.Div([
@@ -59,7 +59,6 @@ app.layout = html.Div(children=[html.H1('Australia Wildfire Dashboard',
 
     ])
     #outer division ends
-
 ])
 #layout ends
 #TASK 4: Add the Ouput and input components inside the app.callback decorator.
