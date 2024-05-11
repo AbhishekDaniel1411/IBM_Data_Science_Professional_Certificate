@@ -32,7 +32,7 @@ app.layout = html.Div([
         dcc.Dropdown(id = 'dropdown-statistics', options = dropdown_options, value='Select Report', placeholder='Select a report type')
     ]),
     html.Div(dcc.Dropdown(id = 'select-year', options = [{'label': i, 'value' : i} for i in year_list], value = 'select the year')),
-    html.Div(id = 'output-container', className = 'chart-grid', style = {'display': 'flex'}, children =[])
+    html.Div(id = 'output-container', className = 'chart-grid', style = {'display': 'flex'})
 ])
 
 # Define the callback function to update the input container based on the selected statistics
